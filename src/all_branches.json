@@ -1,0 +1,112 @@
+{
+  "status": 200,
+  "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/branches?protected=false&per_page=100&page=1",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+    "cache-control": "private, max-age=60, s-maxage=60",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 20 Jul 2021 19:50:04 GMT",
+    "etag": "W/\"701a007cf621bfe891afb7771240860387ad98d60aab0592b574911b79231697\"",
+    "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "server": "GitHub.com",
+    "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+    "transfer-encoding": "chunked",
+    "vary": "Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-github-media-type": "github.v3; format=json",
+    "x-github-request-id": "07C2:5E7D:9F094:1B40E1:60F728EC",
+    "x-ratelimit-limit": "1000",
+    "x-ratelimit-remaining": "988",
+    "x-ratelimit-reset": "1626811652",
+    "x-ratelimit-resource": "core",
+    "x-ratelimit-used": "12",
+    "x-xss-protection": "0"
+  },
+  "data": [
+    {
+      "name": "PR-1",
+      "commit": {
+        "sha": "ec0bc2fe58ffbf8b144375e84fff22f85dbc60cf",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/ec0bc2fe58ffbf8b144375e84fff22f85dbc60cf"
+      },
+      "protected": false
+    },
+    {
+      "name": "PR-2",
+      "commit": {
+        "sha": "52f8a48da002862526e0e24a78e8e913c5dbba5b",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/52f8a48da002862526e0e24a78e8e913c5dbba5b"
+      },
+      "protected": false
+    },
+    {
+      "name": "etiennemartin-patch-1",
+      "commit": {
+        "sha": "9097182410a19333a169671993da70f15d2c54cf",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/9097182410a19333a169671993da70f15d2c54cf"
+      },
+      "protected": false
+    },
+    {
+      "name": "hackdays-2021-1",
+      "commit": {
+        "sha": "608915a8792638e2b13b7ca0ff51e1b90bed64f3",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/608915a8792638e2b13b7ca0ff51e1b90bed64f3"
+      },
+      "protected": false
+    },
+    {
+      "name": "kat-test-1",
+      "commit": {
+        "sha": "252303ac5ab0787fd507fbabd892a7e7913c355d",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/252303ac5ab0787fd507fbabd892a7e7913c355d"
+      },
+      "protected": false
+    },
+    {
+      "name": "kat-test-2",
+      "commit": {
+        "sha": "d98c4efd066156fc84095f86dbb4ee6321961aca",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/d98c4efd066156fc84095f86dbb4ee6321961aca"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "da62b9bb955e4d6a784cef6f6fa3fe78094b18e2",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/da62b9bb955e4d6a784cef6f6fa3fe78094b18e2"
+      },
+      "protected": false
+    },
+    {
+      "name": "new-change",
+      "commit": {
+        "sha": "8f482f709afdb91767fecf4286caa97e2b33c22a",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/8f482f709afdb91767fecf4286caa97e2b33c22a"
+      },
+      "protected": false
+    },
+    {
+      "name": "sebmartin-patch-1",
+      "commit": {
+        "sha": "5d1269d06485964bd8e5ef23083af6cd3df87b59",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/5d1269d06485964bd8e5ef23083af6cd3df87b59"
+      },
+      "protected": false
+    },
+    {
+      "name": "sebmartin-patch-2",
+      "commit": {
+        "sha": "575f65bf84274f8719497b91c73425384782788f",
+        "url": "https://api.github.com/repos/etiennemartin/CodeReviewTesting/commits/575f65bf84274f8719497b91c73425384782788f"
+      },
+      "protected": false
+    }
+  ]
+}

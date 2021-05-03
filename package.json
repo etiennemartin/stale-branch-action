@@ -1,0 +1,35 @@
+{
+  "name": "stale-branch-action",
+  "version": "0.1.0",
+  "description": "A Repo to build and test GitHub Actions to manage old stale branches",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etiennemartin/stale-branch-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Stale",
+    "Branch",
+    "Clean"
+  ],
+  "author": "Etienne Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etiennemartin/stale-branch-action/issues"
+  },
+  "homepage": "https://github.com/etiennemartin/stale-branch-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "jest": "^26.6.3",
+    "ws": ">=7.4.6"
+  }
+}

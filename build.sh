@@ -1,0 +1,1 @@
+ncc build src/index.js --license licenses.txt

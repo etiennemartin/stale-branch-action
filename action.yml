@@ -1,0 +1,26 @@
+name: "Hello World"
+description: "Greet someone and record the time"
+inputs:
+  token:
+    description: "Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`."
+    required: false
+    default: ${{ github.token }}
+  expiry:
+    description: "The number of days before a branch is considered stale. (Default is one year)"
+    required: true
+    default: 365
+  grace:
+    description: "Grace period for the Pull Requests created before they are closed and the branch is deleted. (Default is two weeks)"
+    default: 14
+  merge_target:
+    description: "The target branch used to target as the base of the PR."
+    default: "main"
+  pr_title:
+    description: "The title used followed by the branch name for PRs created when a branch is stale."
+    default: "Stale Branch requires merging"
+  pr_message:
+    description: "A custom message that will be appended to the PR body when creating one for a stale branch."
+    default: "The branch associated with this PR was deemed stale and needs to be merged in or it will be deleted. Once the grace period is up, both this PR and the branch will be discarded."
+runs:
+  using: "node12"
+  main: "dist/index.js"
