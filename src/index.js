@@ -52,7 +52,7 @@ async function run() {
             repo,
             b.name,
             defaultTargetBranch,
-            "etiennemartin", // TODO: Pull this from Branch's last commit?
+            b.commit.commiter.login,
             `${prTitle} (${b.name})`,
             `**Branch:** ${b.name}\n**Grace period:** ${grace} day(s)\n\n${prMessage}`
           )
