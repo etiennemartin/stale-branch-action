@@ -25,7 +25,7 @@ Every available option.
 
 ## Example usage
 
-```
+```yml
 on:
   schedule:
     - cron: '0 0 * * *' # Everday at midnight
