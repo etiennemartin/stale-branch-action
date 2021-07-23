@@ -21,6 +21,9 @@ inputs:
   pr_message:
     description: "A custom message that will be appended to the PR body when creating one for a stale branch."
     default: "The branch associated with this PR was deemed stale and needs to be merged in or it will be deleted. Once the grace period is up, both this PR and the branch will be discarded."
+  delete_branches:
+    description: "Determines if the branch is delete when closing the pull requests. WARNING: This is destructive when set to true."
+    default: false
 runs:
   using: "node12"
   main: "dist/index.js"

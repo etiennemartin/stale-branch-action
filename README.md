@@ -10,13 +10,14 @@ This Action will automatically create merge pull requests for branches that exce
 
 Every available option.
 
-| Input          | Defaults | Description                                                                                                         |
-| -------------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
-| `expiry`       | 365      | The number of days before a branch is considered stale. (Default is one year)                                       |
-| `grace`        | 14       | Grace period for the Pull Requests created before they are closed and the branch is deleted. (Default is two weeks) |
-| `merge_target` | "main"   | The target branch used to target as the base of the PR.                                                             |
-| `pr_title`     | string   | The title used followed by the branch name for PRs created when a branch is stale.                                  |
-| `pr_message`   | string   | A custom message that will be appended to the PR body when creating one for a stale branch.                         |
+| Input             | Defaults | Description                                                                                                         |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| `delete_branches` | false    | Determines if the branch is deleted when closing associated PRs. WARNING: making this true is destructive!          |
+| `expiry`          | 365      | The number of days before a branch is considered stale. (Default is one year)                                       |
+| `grace`           | 14       | Grace period for the Pull Requests created before they are closed and the branch is deleted. (Default is two weeks) |
+| `merge_target`    | "main"   | The target branch used to target as the base of the PR.                                                             |
+| `pr_title`        | string   | The title used followed by the branch name for PRs created when a branch is stale.                                  |
+| `pr_message`      | string   | A custom message that will be appended to the PR body when creating one for a stale branch.                         |
 
 ## Example usage
 

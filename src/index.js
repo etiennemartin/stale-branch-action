@@ -15,6 +15,7 @@ async function run() {
   const prTitle = core.getInput('pr_title')
   const prMessage = core.getInput('pr_message')
   const defaultTargetBranch = core.getInput('merge_target')
+  const deleteBranches = core.getInput('delete_branches')
 
   console.log(`Branch age limit: ${expiry} day(s).`);
   console.log(`PR Grace period: ${grace} day(s).`)
@@ -72,10 +73,12 @@ async function run() {
             return pulls.closePullRequest(client, owner, repo, pr.number)
           }))
 
-          await Promise.all(expiredPRs.map(pr => {
-            console.log(` > Deleting Branch > ${pr.head.ref}`)
-            return branches.closeBranch(client, owner, repo, pr.head.ref)
-          }))
+          if (deleteBranches) {
+            await Promise.all(expiredPRs.map(pr => {
+              console.log(` > Deleting Branch > ${pr.head.ref}`)
+              return branches.closeBranch(client, owner, repo, pr.head.ref)
+            }))
+          }
         }
       }
     } else {
