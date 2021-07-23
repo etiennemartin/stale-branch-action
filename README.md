@@ -6,6 +6,10 @@ This Github actions is meant to keep repositories from accumulating stale old br
 
 This Action will automatically create merge pull requests for branches that exceed a given number of days. Pull requests will remain open until the grace period exceeded. If a pull request exceeds the grace period, it will be closed automatically and the branch will be deleted.
 
+## :warning::warning: WARNING :warning::warning:
+
+Enabling the `delete_branches` flag in the configuration is a destructive :fire: action. Enabling this feature will delete the branch when the PR is automatically closed due to exceeding it's grace period.
+
 ## Inputs
 
 Every available option.
@@ -22,7 +26,9 @@ Every available option.
 ## Example usage
 
 ```
-on: [push]
+on:
+  schedule:
+    - cron: '0 0 * * *' # Everday at midnight
 
 jobs:
   stale-branches:
@@ -38,4 +44,5 @@ jobs:
           merge_target: "main"
           pr_title: "This is a custom title!"
           pr_message: "This is a customer Message!"
+          delete_branches: false # WARNING: true value is destructive
 ```
