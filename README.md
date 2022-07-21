@@ -1,6 +1,6 @@
 # Stale Branches be gone!
 
-This Github actions is meant to keep repositories from accumulating stale old branches that linger on forever. This is very useful for repositories that have a large amount of contributors that aren't 100% active or may only contribute on rate occasions.
+This Github actions is meant to keep repositories from accumulating stale old branches that linger on forever. This is very useful for repositories that have a large amount of contributors that aren't 100% active or may only contribute on rare occasions.
 
 # How it works?
 
